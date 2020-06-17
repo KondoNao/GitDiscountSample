@@ -18,7 +18,13 @@ public class Main {
             e.printStackTrace();
         }
 
+        DiscountSample discountSample = new DiscountSample();
+        boolean rtn = discountSample.priceCheck(input_price);
 
-
+        if (rtn == true) {
+            System.out.println("You can get a discount!");
+        } else {
+            System.out.println("You can not get a discount.");
+        }
     }
 }
